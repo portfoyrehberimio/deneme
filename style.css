@@ -1,0 +1,182 @@
+/* CSS ile stillendirme yapabilirsiniz */
+body {
+  background-color: #ffffff; /* Gri arka plan rengi */
+  font-family: Arial, sans-serif;
+  color: #333333; /* Metin rengi */
+  margin: 0;
+  padding: 0;
+      padding-top: 65px; /* Navbar'ınızın yüksekliğine göre bu değeri değiştirin */
+
+}
+#header {
+  background-color: #007BFF; /* Mavi üst kısım arka plan rengi */
+  color: white;
+  padding: 10px 0; /* Üst ve alt boşlukları ayarlayın */
+  text-align: center;
+}
+#header h1 {
+  margin: 0;
+}
+.my-navbar h4 {
+  margin: 0; /* Başlık etrafındaki varsayılan boşluğu kaldır. */
+  font-size: 24px; /* Varsayılan başlık boyutunu küçült. */
+}
+
+#coinSelectorContainer {
+  text-align: center;
+  padding: 20px 0;
+}
+select {
+  padding: 5px;
+}
+.coinContainer {
+  display: flex;
+  flex-wrap: wrap; /* Kutucukların yan yana sığması için */
+  justify-content: space-between; /* Kutucukları yatay olarak aralarında boşluk bırakarak sıralama */
+  align-content: flex-start; /* Kutucukları üst üste sıralama */
+  gap: 200px; /* Kutucuklar arasında boşluk bırakma */
+}
+.coinBox {
+  background-color: #FFFFFF; /* Beyaz kutucukların arka plan rengi */
+  width: calc(100% - 20px); /* Eşit genişlik ve aralık bırakma */
+  margin: 5px;
+  border-radius: 10px; /* Yuvarlak köşeler */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Hafif gölgelendirme */
+  text-align: center;
+}
+
+
+.coinInfo {
+  background-color: #FFFFFF; /* Beyaz alt kutuların arka plan rengi */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px; /* Yuvarlak köşeler */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Hafif gölgelendirme */
+  width: calc(30% - 20px); /* Üçerli sıralama için genişlik ayarı */
+  text-align: center;
+  display: inline-block; /* Kutuların satırda yan yana sıralanmasını sağlar */
+  vertical-align: top; /* Kutuların üstten başlamasını sağlar */
+}
+
+@media (max-width: 650px) {
+  .coinInfo {
+    width: calc(30% - 20px); /* Ekran genişliği 992px veya daha küçükse iki kutu sıralama */
+  }
+}
+
+@media (max-width: 550px) {
+  .coinInfo {
+    width: calc(30% - 20px); /* Ekran genişliği 768px veya daha küçükse üç kutu sıralama */
+  }
+}
+
+@media (max-width: 450px) {
+  .coinInfo {
+    width: 90%; /* Ekran genişliği 480px veya daha küçükse bir kutu sıralama */
+  }
+}
+
+h2 {
+  font-weight: bold; /* Başlıkları koyu yazı yapma */
+  color: #007BFF; /* Mavi başlık rengi */
+}
+.infoTitle {
+  color: #333333; /* Gri başlık rengi */
+}
+.infoValue {
+  font-weight: bold;
+  color: #000000; /* Siyah değer rengi */
+  margin-top: 10px; /* Başlık ile değer arasına satır boşluğu ekleme */
+}
+
+/* Renk sınıfları */
+.red-value {
+  color: red; /* Kırmızı renk */
+}
+
+.green-value {
+  color: green; /* Yeşil renk */
+}
+
+/* Geçişler */
+.infoValue {
+  font-weight: bold;
+  margin-top: 10px; /* Başlık ile değer arasına satır boşluğu ekleme */
+  transition: color 0.3s ease; /* Renk değişimi için geçiş efekti ekler */
+}
+
+.infoValue:hover {
+  color: blue; /* Farklı bir renk kullanabilirsiniz */
+}
+
+ 
+    
+
+
+
+     /* Diğer stil kuralları burada olabilir */
+
+     .alti-uzun-link {
+      text-decoration: underline; /* Altını çizme stilini etkinleştirir */
+      font-weight: bold; /* Kalın yazı stilini etkinleştirir */
+  }
+
+  .infoGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoContainer {
+    flex: 1;
+    padding: 5px;
+}
+
+.secenekKutusu {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.secenekKutusu a {
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.secenekKutusu a:hover {
+  background-color: #ddd;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Bu satır içerikleri yatay olarak ortalar. */
+  justify-content: center; /* Bu satır içerikleri dikey olarak ortalar. */
+  height: 100vh; /* Ekranın tam yüksekliği */
+}
+
+.container {
+  margin-bottom: 20px; /* chart-gauge ve butonlar arasında boşluk bırakmak için */
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  margin: 0 5px;
+}
+
+
+.chart-gauge {
+  width: 400px;
+  margin: 0px auto;
+}

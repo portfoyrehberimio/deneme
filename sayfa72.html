@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="navbar/src/css/style.css">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=sZ2LhoRKmb_NHhwnbJayrhqcdKsGhQ0eviqz59q0O0ufPRVcMu7LYmhEfqCJZiYswFxfBuU2H-OpnoHSEGK9s5he21U48MlTXfFBxAJtsrowXSLdY6ThDmnOITwKEBXxqUgLjJYpUDT5pq5gvIENW1g2yYTQSGbB9dBppUiRBDULzxrZLmzdZbc6Yf7FReAYbB_rESp5DWgK1M7UqoO5ozk9ulbJw5_sKbND6AZg7kB3gH4AnhwSANVO7d_k2SGuLCEWy-UIEKvqXNgNInvhSQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zeGIxcGx6Y3BubDQzNzcwOS5wcm9kLnN4YjEuc2VjdXJlc2VydmVyLm5ldDoyMDgzL2Nwc2VzczQyMTY5NTcxODgvZG93bmxvYWQ_c2tpcGVuY29kZT0xJmZpbGU9JTJmaG9tZSUyZnkyNjBsMHN3eXNobiUyZnB1YmxpY19odG1sJTJmYXBwLnBvcnRmb3lyZWhiZXJpbS5pbyUyZnNheWZhNzIuaHRtbA"/><script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="sayfa72.css">
+
+    <script src="coinismi.js"></script>
+
+</head>
+</head>
+
+<body>
+
+    <nav class="my-navbar">
+        <div class="my-container">
+
+            <div class="my-navbar-header">
+                <a href="https://app.portfoyrehberim.io">
+                    <h4>Portföy<span>rehberim</span></h4>
+                </a>
+                <button class="my-navbar-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="my-navbar-menu">
+                <ul class="navbar-nav">
+                    <li class="active"><a href="index.html">Ana Sayfa</a></li>
+
+                    <li class="navbar-dropdown">
+                        <a href="#" class="dropdown-toggler">
+                            Coin Analizi <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="sayfa6.html">Coin Sayfası</a></li>
+                            <li><a href="sayfa1.html">Puan Tablosu</a></li>
+                            <li><a href="sayfa2.html">Coin Karşılaştırma</a></li>
+                            <li><a href="sayfa10.html">İndikatörler</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-dropdown">
+                        <a href="#" class="dropdown-toggler">
+                            Piyasa Analizi <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="sayfa4.html">Haberler</a></li>
+                            <li><a href="sayfa5.html">Finansal Takvim</a></li>
+                            <li><a href="sayfa9.html">Genel Piyasa Analizi</a></li>
+                            <li><a href="sayfa8.html">Korku ve Aç Gözlülük Endeksi</a></li>
+                            <li><a href="sayfa13.html">ek sayfa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sayfa11.html">Hakkında</a></li>
+                    <li><a href="sayfa12.html">Paketler</a></li>
+                    <li><a href="sayfa7.html">Portföy Oluşturucu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- düşüş,nötr,yükseliş,enflasyon,bitcoin/altcoin, -->
+
+    <svg width="10" height="10"></svg>
+
+
+
+    <svg width="10" height="10"></svg>
+
+
+    <section class="hero">
+
+        <form class="email-form" method="post">
+            <div class="secenekKutusu">
+                <a href="sayfa7.html">Geri dön</a>
+
+            </div>
+            <label for="email">E-posta Adresiniz:</label>
+            <input type="email" id="email" name="email" required>
+            <button onclick="getResults()">Sonuçları Göster</button>
+        </form>
+    </section>
+
+    <div id="results"></div>
+
+
+    <section class="features">
+        <div class="feature">
+            <h3>Getiri beklentiniz doğrultusunda hangi risk seviyesini kabul edebilirsiniz?</h3><br>
+            <p> </p>
+
+            <div class="options">
+                <label>
+                    <input type="radio" name="secenek1" value="1,1,1,1,1,1">
+                    Çok Yüksek Riskli
+                </label>
+                <label>
+                    <input type="radio" name="secenek1" value="0.85,1,1,1,1,1">
+                    Yüksek Riskli
+                </label>
+                <label>
+                    <input type="radio" name="secenek1" value="0.6,1,1,1,1,1">
+                    Orta Riskli
+                </label>
+                <label>
+                    <input type="radio" name="secenek1" value="0.5,1,1,1,1,1">
+                    Az Riskli
+                </label>
+                <label>
+                    <input type="radio" name="secenek1" value="0.4,1,1,1,1,1">
+                    Daha Az Riskli
+                </label>
+            </div>
+        </div>
+        <div class="feature">
+            <h3>Stratejinizi hangi vadeye göre planlıyorsunuz? </h3><br>
+            <p></p>
+            <div class="options">
+                <label>
+                    <input type="radio" name="secenek2" value="1,1,1,1,1,1">
+                    Kısa Vade
+                </label>
+                <label>
+                    <input type="radio" name="secenek2" value="1,1,1,1,1,1">
+                    Orta Vade
+                </label>
+                <label>
+                    <input type="radio" name="secenek2" value="1,1,1,1,1,1">
+                    Uzun Vade
+                </label>
+            </div>
+        </div>
+        <div class="feature">
+            <h3>Bitcoin hakkında hangi ifade size daha yakın?</h3><br>
+            <p></p>
+            <div class="options">
+                <label>
+                    <input type="radio" name="secenek3" value="1,1,1,1,1,1">
+                    Bitcoin, yatırım yapılması gereken bir varlık sınıfıdır.
+                </label>
+                <label>
+                    <input type="radio" name="secenek3" value="1,1,1,1,1,1">
+                    Bitcoin'in değeri oynak olduğu için riskli bir yatırım aracıdır.
+                </label>
+                <label>
+                    <input type="radio" name="secenek3" value="1,1,1,1,1,1">
+                    Diğer kripto para birimleri, Bitcoin'den daha iyi fırsatlar sunuyor.
+                </label>
+
+            </div>
+        </div>
+        <div class="feature">
+            <h3>Kripto paraların ekonomik trendleri konusundaki bilgi düzeyiniz ve bu trendlere karşı hissiyatınızı
+                hangi seçenek en doğru şekilde ifade eder?</h3><br>
+            <p></p>
+            <div class="options">
+                <label>
+                    <input type="radio" name="secenek4" value="1,1,1,1,1,1">
+                    Oldukça çok bilgi sahibiyim ve iyimser hissediyorum.
+                </label>
+                <label>
+                    <input type="radio" name="secenek4" value="1,1,1,1,1,1">
+                    Bir miktar bilgi sahibiyim ve genel olarak iyimser hissediyorum.
+                </label>
+                <label>
+                    <input type="radio" name="secenek4" value="1,1,1,1,1,1">
+                    Sınırlı bilgiye sahibim ve kararsız hissediyorum.
+                </label>
+                <label>
+                    <input type="radio" name="secenek4" value="1,1,1,1,1,1">
+                    Az bilgiye sahibim ve kötümser hissediyorum.
+                </label>
+
+
+
+            </div>
+        </div>
+        <div class="feature">
+            <h3>Kripto paraların token ekonomisi ve topluluk tarafından gördüğü ilgi arasında, sizin için daha
+                ağır basan hangisidir?</h3><br>
+            <p></p>
+            <div class="options">
+                <label>
+                    <input type="radio" name="secenek5" value="1,1,1,1,1,1">
+                    Coinin Enflasyonunun Yüksek olması benim için negatif bir durum.
+                </label>
+                <label>
+                    <input type="radio" name="secenek5" value="1,1,1,1,1,1">
+                    Hem coinin enflasyonik yapısı hem de proje üzerindeki hype benim için eşit derecede önemli, bu
+                    konuda nötrüm.
+                </label>
+                <label>
+                    <input type="radio" name="secenek5" value="1,1,1,1,1,1">
+                    Enflasyon ile ilgilenmiyorum. Proje üzerindeki hype benim için daha önemli.
+                </label>
+            </div>
+        </div>
+        <div class="feature">
+            <h3>Yatırımlarınızın değeri kısa vadede dalgalanmalara maruz kalsa bile, uzun vadede yüksek getiri elde etme
+                şansı için bu riski göze alır mısınız?</h3><br>
+            <p></p>
+            <div class="options">
+                <label>
+                    <input type="radio" name="secenek6" value="1,1,1,1,1,1">
+                    Evet
+                </label>
+                <label>
+                    <input type="radio" name="secenek6" value="1,1,1,1,1,1">
+                    Belki
+                </label>
+                <label>
+                    <input type="radio" name="secenek6" value="1,1,1,1,1,1">
+                    Hayır
+                </label>
+
+            </div>
+        </div>
+
+        <div class="feature">
+            <h3>Portföyünüzde görmek istediğiniz coin sayısını belirtin. (En çok tercih edilen 30)</h3><br>
+            <p></p>
+            <div class="slider-container">
+                <input type="range" min="8" max="39" value="30" class="slider" id="slider1">
+                <output for="slider1">50</output>
+            </div>
+        </div>
+
+        <div class="feature">
+            <h3>Bütçenizi Girin:</h3><br>
+
+            <input type="number" id="slider2-input" placeholder=$ value="1,1,1,1,1,1">
+        </div>
+        <div class="feature">
+            <h3>Çoktan Seçmeli Kutu</h3><br>
+            <p></p>
+            <div class="options">
+                <label>
+                    <input type="checkbox" id="hepsi" name="hepsi"> Hepsi </label>
+                <label>
+                    <input type="checkbox" id="diger" name="diger"> Diğer </label>
+                <div class="other-options">
+                    <label><input type="checkbox" name="YapayZeka" value="YapayZeka"> Yapay Zeka </label>
+                    <label><input type="checkbox" name="MerkeziyetliBorsalar" value="MerkeziyetliBorsalar"> Merkeziyetli
+                        Borsalar </label>
+                    <label><input type="checkbox" name="IcerikUretimi" value="IcerikUretimi"> İçerik Üretimi </label>
+                    <label><input type="checkbox" name="ZincirlerArasiKopru" value="ZincirlerArasiKopru"> Zincirler
+                        arası köprü </label>
+                    <label><input type="checkbox" name="MerkeziOlmayanOtonomOrganizasyonlar"
+                            value="MerkeziOlmayanOtonomOrganizasyonlar"> Merkezi Olmayan Otonom Organizasyonlar </label>
+                    <label><input type="checkbox" name="MerkeziyetsizFinans" value="MerkeziyetsizFinans"> Merkeziyetsiz
+                        Finans </label>
+                    <label><input type="checkbox" name="DomainServisleri" value="DomainServisleri"> Domain Servisleri
+                    </label>
+                    <label><input type="checkbox" name="FanToken" value="FanToken"> Fan Token </label>
+                    <label><input type="checkbox" name="Oyun" value="Oyun"> Oyun </label>
+                    <label><input type="checkbox" name="Launchpad" value="Launchpad"> Launchpad </label>
+                    <label><input type="checkbox" name="Layer1" value="Layer1"> Layer1 </label>
+                    <label><input type="checkbox" name="Layer2" value="Layer2"> Layer2 </label>
+                    <label><input type="checkbox" name="BorcalmaVermePlatformlari" value="BorcalmaVermePlatformlari">
+                        Borç alma/verme platformları </label>
+                    <label><input type="checkbox" name="PazarYerleri" value="PazarYerleri"> Pazar Yerleri </label>
+                    <label><input type="checkbox" name="KarikaturCoinler" value="KarikaturCoinler"> Karikatür Coinler
+                    </label>
+                    <label><input type="checkbox" name="Metaverse" value="Metaverse"> Metaverse </label>
+                    <label><input type="checkbox" name="NFT" value="NFT"> NFT </label>
+                    <label><input type="checkbox" name="GizlilikCoinleri" value="GizlilikCoinleri"> Gizlilik Coinleri
+                    </label>
+                    <label><input type="checkbox" name="QuantumDirencliCoinler" value="QuantumDirencliCoinler"> Quantum
+                        Dirençli Coinler </label>
+                    <label><input type="checkbox" name="Scaling" value="Scaling"> Scaling </label>
+                    <label><input type="checkbox" name="AkilliKontratlar" value="AkilliKontratlar"> Akıllı Kontratlar
+                    </label>
+                    <label><input type="checkbox" name="Depolama" value="Depolama"> Depolama </label>
+                    <label><input type="checkbox" name="Cuzdan" value="Cuzdan"> Cüzdan </label>
+                    <label><input type="checkbox" name="Web3" value="Web3"> Web3 </label>
+                    <label><input type="checkbox" name="SifirBilgiIspati" value="SifirBilgiIspati"> Sıfır Bilgi İspatı
+                    </label>
+
+                </div>
+            </div>
+
+    </section>
+
+
+
+    <iframe src="spider/spiderchart.html" width="800" height="800" style="border:none;"></iframe>
+
+    <script>
+        window.onload = function () {
+            var hepsiCheckbox = document.getElementById("hepsi");
+            var digerCheckbox = document.getElementById("diger");
+            var digerSecenekler = document.querySelectorAll('.other-options');
+
+            function toggleDigerSecenekler(visibility) {
+                for (var i = 0; i < digerSecenekler.length; i++) {
+                    digerSecenekler[i].style.display = visibility;
+                }
+            }
+
+            digerCheckbox.addEventListener("change", function () {
+                if (digerCheckbox.checked) {
+                    toggleDigerSecenekler("block");
+                } else {
+                    toggleDigerSecenekler("none");
+                }
+            });
+
+            hepsiCheckbox.checked = true;
+            toggleDigerSecenekler("none");
+        }
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Slider 1
+            var slider1 = document.getElementById("slider1");
+            var output1 = document.querySelector("output[for='slider1']");
+            output1.textContent = slider1.value;
+
+            slider1.addEventListener("input", function () {
+                output1.textContent = this.value;
+            });
+
+
+        });
+
+
+
+        window.addEventListener('DOMContentLoaded', function () {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener('change', updateSelectedOptions);
+
+            });
+
+            function updateSelectedOptions() {
+                var selectedOptions = [];
+
+                checkboxes.forEach(function (checkbox) {
+                    if (checkbox.checked) {
+                        selectedOptions.push(checkbox.value);
+                    }
+                });
+
+                document.getElementById('selectedOptions').textContent = selectedOptions.join(', ');
+            }
+
+
+            const sliders = document.querySelectorAll('.slider');
+            const outputs = document.querySelectorAll('output');
+
+            sliders.forEach((slider, index) => {
+                slider.addEventListener('input', () => {
+                    outputs[index].textContent = slider.value;
+                });
+            });
+
+            const hepsiCheckbox = document.getElementById('hepsi');
+            const otherCheckboxes = document.querySelectorAll('.feature:last-child .options input[type="checkbox"]:not(#hepsi)');
+
+            hepsiCheckbox.addEventListener('change', function () {
+                otherCheckboxes.forEach(checkbox => {
+                    checkbox.checked = this.checked;
+                });
+            });
+
+            otherCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function () {
+                    if (this.checked) {
+                        hepsiCheckbox.checked = false;
+                    }
+                });
+            });
+
+
+
+            var radios1 = document.querySelectorAll('input[type="radio"][name="secenek1"]');
+            var selectedValue1Element = document.getElementById('selectedValue1');
+            radios1.forEach(function (radio) {
+                radio.addEventListener('change', function () {
+                    selectedValue1Element.textContent = radio.value;
+                });
+            });
+
+            var radios2 = document.querySelectorAll('input[type="radio"][name="secenek2"]');
+            var selectedValue2Element = document.getElementById('selectedValue2');
+            radios2.forEach(function (radio) {
+                radio.addEventListener('change', function () {
+                    selectedValue2Element.textContent = radio.value;
+                });
+            });
+
+            var radios3 = document.querySelectorAll('input[type="radio"][name="secenek3"]');
+            var selectedValue3Element = document.getElementById('selectedValue3');
+            radios3.forEach(function (radio) {
+                radio.addEventListener('change', function () {
+                    selectedValue3Element.textContent = radio.value;
+                });
+            });
+            var radios4 = document.querySelectorAll('input[type="radio"][name="secenek4"]');
+            var selectedValue4Element = document.getElementById('selectedValue4');
+            radios4.forEach(function (radio) {
+                radio.addEventListener('change', function () {
+                    selectedValue4Element.textContent = radio.value;
+                });
+            });
+            var radios5 = document.querySelectorAll('input[type="radio"][name="secenek5"]');
+            var selectedValue5Element = document.getElementById('selectedValue5');
+            radios5.forEach(function (radio) {
+                radio.addEventListener('change', function () {
+                    selectedValue5Element.textContent = radio.value;
+                });
+            });
+            var radios6 = document.querySelectorAll('input[type="radio"][name="secenek6"]');
+            var selectedValue6Element = document.getElementById('selectedValue6');
+            radios6.forEach(function (radio) {
+                radio.addEventListener('change', function () {
+                    selectedValue6Element.textContent = radio.value;
+                });
+            });
+
+
+
+            // Slider ve seçenek değerleri değiştikçe güncellemeyi tetikleyen işlev
+            function updateSliderValues() {
+                var slider1Value = document.getElementById('slider1').value;
+                document.getElementById('slider1Value').textContent = slider1Value;
+            }
+
+
+
+
+
+            var slider1 = document.getElementById('slider1');
+            slider1.addEventListener('input', updateSliderValues);
+
+            // Başlangıçta değerleri güncelle
+            updateSliderValues();
+            updateSelectedOptions();
+        });
+
+
+
+        window.addEventListener('DOMContentLoaded', function () {
+            var slider1 = document.getElementById('slider1');
+
+            var resultElement = document.getElementById('result');
+
+            function updateResult() {
+                var slider1Value = parseFloat(slider1.value);
+
+
+                var result = slider1Value;
+                resultElement.textContent = result;
+            }
+
+            slider1.addEventListener('input', updateResult);
+
+        });
+
+
+
+
+
+
+
+        function getResults() {
+            // Başlangıç değerleri olarak 6 tane 1 değeri atıyoruz
+            var products = [1, 1, 1, 1, 1, 1];
+
+            // İki grup radyo butonu için döngü başlatıyoruz
+            for (var i = 1; i <= 6; i++) {
+                var radios = document.querySelectorAll('input[type="radio"][name="secenek' + i + '"]');
+
+                radios.forEach(function (radio) {
+                    if (radio.checked) {
+                        // Radyo butonunun değerini virgüle göre ayırıyoruz
+                        var parts = radio.value.split(',').map(parseFloat);
+
+                        // Her bir değeri ayrı ayrı çarpıyoruz
+                        for (var j = 0; j < products.length; j++) {
+                            products[j] *= parts[j];
+                        }
+                    }
+                });
+            }
+
+            // Sonuçları sayfada yazdıralım
+            var resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "Cevaplar: " + products.join(", ");
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var toggler = document.querySelector('.my-navbar-toggler');
+            var menu = document.querySelector('.my-navbar-menu');
+
+            toggler.addEventListener('click', function () {
+                if (menu.style.display === 'flex') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'flex';
+                }
+            });
+        });
+
+
+    </script>
+    <script src="script.js"></script>
+    <script src="coinismi.js"></script>
+    <script src="sayfa2.js"></script>
+</body>
+
+</html>

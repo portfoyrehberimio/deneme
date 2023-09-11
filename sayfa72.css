@@ -1,0 +1,160 @@
+
+
+.hero {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    padding-top: 50px; /* Navbar'ınızın yüksekliğine göre bu değeri değiştirin */
+
+}
+
+.cta-button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.my-navbar h4 {
+    margin: 0; /* Başlık etrafındaki varsayılan boşluğu kaldır. */
+    font-size: 24px; /* Varsayılan başlık boyutunu küçült. */
+  }
+  
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+ /* soru kutularının çerçevesi */
+.feature {
+    flex: 1;
+    padding: 20px;
+    border: 0px solid #f4f4f4;  /* soru kutularının çerçeve kalınlığı */
+    margin: 10px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    margin-top: 10px;
+}
+
+output {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Diğer stiller */
+
+.feature .options label {
+    display: block;
+    padding: 5px;
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.feature .options label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: stretch; /* Bunu ekleyerek tüm .feature öğeleri aynı yüksekliğe sahip olacaktır */
+}
+
+.feature {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Her bir .feature içindeki içerikleri düzenlemek için flexbox kullanalım */
+    flex-direction: column; /* İçerikleri dikey olarak sıralayalım */
+}
+
+.features .feature h3, .features .feature p, .features .feature .options {
+    flex-grow: 1; /* Böylece tüm öğeler en uzun öğeye göre uzatılır */
+}
+
+
+.last-feature {
+    flex-basis: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.other-options {
+    display: none;
+}
+
+.email-form {
+    margin-left: auto;
+  }
+
+.email-form label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.email-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.email-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.email-form button:hover {
+    background-color: #555;
+}
+
+
+.secenekKutusu {
+   
+  }
+  
+  .secenekKutusu a {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .secenekKutusu a:hover {
+    background-color: #ddd;
+  }

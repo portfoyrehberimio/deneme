@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Open+Sans&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: hsl(0, 0%, 100%);
+	color: hsl(0, 0%, 15%);
+	font-family: "Open Sans", sans-serif;
+}
+
+main {
+	margin: 0rem auto;
+	max-width: 35rem;
+	padding: 0rem;
+	width: 100vw;
+	background: hsl(0, 0%, 100%);
+}
+
+main > * + * {
+	margin-top: 0.5rem;
+}
+
+code {
+	background: hsl(325, 80%, 90%);
+	padding: 0.1rem;
+	font-family: inherit;
+}
+
+h1 {
+	font-family: "sans-serif";
+}
+
+p {
+	line-height: 1.5;
+}
+
+#spider-chart {
+	width: 100%;
+	height: auto;
+}
+
+svg text {
+	font-family: inherit;
+	color: inherit;
+}
