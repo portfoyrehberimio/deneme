@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - How to Create CSS Masonry Layouts with CSS - Multi-column Layout</title>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="c-multicol">
+	<div class="post">
+		<img src="resim1.png" alt="Modern Office">
+		<h1>Bitcoin Halving </h1>
+		<p>Bitcoin Halving (Yarılanma) süreci, bilindiği üzere, blokların süresine göre farklı zaman dilimlerinde meydana gelmektedir. Bu bağlamda, Monte Carlo simülasyonunu kullanarak Bitcoin'in ne zaman yarılanma sürecine gireceğine dair iki farklı analiz gerçekleştirdik.</p>
+	</div> <!-- end post -->
+	<div class="post">
+		<img src="resim2.png" alt="Modern Office">
+		<h1>Simülasyon 1</h1>
+		<p>İlk simülasyonumuz, Bitcoin için 179 günlük Hiperbolik Dağıtımla gerçekleştirilen Monte Carlo Simülasyon sonuçlarıdır. </p>
+	</div> <!-- end post -->
+	<div class="post">
+		<img src="resim3.png" alt="Modern Office">
+		<h1>İkinci Simülasyon</h1>
+		<p>İkinci simülasyonumuz ise Bitcoin için 228 günlük Hiperbolik Dağıtımla yapılmıştır.</p>
+	</div> <!-- end post -->
+	<div class="post">
+		<img src="resim4.png" alt="Modern Office">
+		<h1>Sonuç</h1>
+		<p>Bu simülasyonlardan elde edilen verilere göre, Bitcoin'in yarılanma değeri tahminen 36.256$ ile 40.026$ arasında bir değerde gerçekleşecektir.</p>
+	</div> <!-- end post -->
+	<div class="post">
+		<img src="resim5.png" alt="Modern Office">
+		<h1>Global taraf</h1>
+		<p>Son dönemde gözlemlediğimiz üzere, Bitcoin fiyatlarında yaşanan düşüş, global likidite trendleri ile uyumlu değil. Global ölçekte likidite artışına paralel olarak, özellikle Çin'den piyasaya sürekli bir likidite girişi yaşanmaktadır. Teorik olarak, bu iki olgu arasında pozitif bir korelasyon beklenirdi. Ancak mevcut durumda, Bitcoin'in fiyat performansı bu korelasyona uymuyor.</p>
+		<p>Bu durum, piyasalarda farklı dinamiklerin veya etmenlerin Bitcoin fiyat hareketlerini etkileyebileceğine işaret ediyor olabilir. </p>
+	</div> <!-- end post -->
+</div> <!-- end c-multicol -->
+<!-- partial -->
+
+
+
+<style>* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	padding: 2rem;
+	margin: 0;
+	font-family: "Lato", sans-serif;
+	counter-reset: bricks;
+	background-color: #e3e7f2;
+	line-height: 1.5;
+	color: #11142d;
+  }
+  
+  p {
+	color: rgba(17, 20, 45, 0.8);
+  }
+  
+  h1 {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin: 2rem 0 1.5rem;
+  }
+  
+  .post {
+	position: relative;
+	background-color: #fff;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .post img {
+	width: 100%;
+	display: block;
+  }
+  .post::before {
+	counter-increment: bricks;
+	content: counter(bricks);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #ff2c6d;
+	width: 1.5rem;
+	height: 1.5rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 80%;
+  }
+  
+  @media screen and (min-width: 768px) {
+	.c-multicol {
+	  gap: 2rem;
+	  -moz-column-width: 30vw;
+		   column-width: 30vw;
+	}
+  
+	.post {
+	  -moz-column-break-inside: avoid;
+		   break-inside: avoid;
+	}
+  }
+  
+  .enlarged {
+	cursor: zoom-out;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
+	z-index: 1000;  /* resmin diğer öğelerin üstünde olduğundan emin olmak için */
+	max-height: 80vh;  /* yükseklik için biraz padding bırakmak istiyoruz */
+	max-width: 70vw;  /* genişlik için biraz padding bırakmak istiyoruz */
+	overflow: hidden;  /* resim ekranın dışına taşıyorsa gizlenmesini engelliyoruz */
+  }
+  
+  
+  </style>
+<script>
+
+
+
+
+
+// Tüm resimlere erişim sağlıyoruz
+const images = document.querySelectorAll('.post img');
+
+// Her bir resme tıklama olayı ekliyoruz
+images.forEach(img => {
+  img.addEventListener('click', function(event) {
+    // Bu satır, tıklama olayının yukarıya (body'ye veya document'a) yayılmasını engelliyor
+    event.stopPropagation();
+    
+    // Resim zaten büyütülmüşse, büyütme stilini kaldırıyoruz
+    if (this.classList.contains('enlarged')) {
+      this.classList.remove('enlarged');
+      this.classList.remove('center-on-screen');
+    } else {
+      // Diğer tüm resimlerin büyütme stilini kaldırıyoruz
+      images.forEach(i => {
+        i.classList.remove('enlarged');
+        i.classList.remove('center-on-screen');
+      });
+      
+      // Tıklanan resme büyütme stilini ekliyoruz
+      this.classList.add('enlarged');
+      
+      // Resmin ekranın dışına çıkıp çıkmadığını kontrol ediyoruz
+      const rect = this.getBoundingClientRect();
+      if (rect.left < 0 || rect.right > window.innerWidth || rect.top < 0 || rect.bottom > window.innerHeight) {
+        this.classList.add('center-on-screen');
+      }
+    }
+  });
+});
+
+// Document'a bir tıklama olayı ekleyerek, tıklama sonucunda tüm resimleri orijinal boyutlarına döndürüyoruz
+document.addEventListener('click', function() {
+  images.forEach(i => {
+    i.classList.remove('enlarged');
+    i.classList.remove('center-on-screen');
+  });
+});
+
+
+
+	
+  </script>
+</body>
+</html>

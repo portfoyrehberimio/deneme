@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Navbar</title>
+    <title>Portföy Oluşturucu</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="navbar/src/css/style.css">
     <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=sZ2LhoRKmb_NHhwnbJayrhqcdKsGhQ0eviqz59q0O0ufPRVcMu7LYmhEfqCJZiYswFxfBuU2H-OpnoHSEGK9s5he21U48MlTXfFBxAJtsrowXSLdY6ThDmnOITwKEBXxqUgLjJYpUDT5pq5gvIENW1g2yYTQSGbB9dBppUiRBDULzxrZLmzdZbc6Yf7FReAYbB_rESp5DWgK1M7UqoO5ozk9ulbJw5_sKbND6AZg7kB3gH4AnhwSANVO7d_k2SGuLCEWy-UIEKvqXNgNInvhSQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zeGIxcGx6Y3BubDQzNzcwOS5wcm9kLnN4YjEuc2VjdXJlc2VydmVyLm5ldDoyMDgzL2Nwc2VzczQyMTY5NTcxODgvZG93bmxvYWQ_c2tpcGVuY29kZT0xJmZpbGU9JTJmaG9tZSUyZnkyNjBsMHN3eXNobiUyZnB1YmxpY19odG1sJTJmYXBwLnBvcnRmb3lyZWhiZXJpbS5pbyUyZnNheWZhNzIuaHRtbA"/><script src="https://d3js.org/d3.v7.min.js"></script>
@@ -65,18 +65,16 @@
             </div>
         </div>
     </nav>
+    <svg width="10" height="10"></svg>
 
 
 
-
+    <svg width="10" height="10"></svg>
+ 
 
     <!-- düşüş,nötr,yükseliş,enflasyon,bitcoin/altcoin, -->
 
-    <svg width="10" height="10"></svg>
-
-
-
-    <svg width="10" height="10"></svg>
+ 
 
 
     <section class="hero">
@@ -87,11 +85,17 @@
 
             </div>
             <label for="email">E-posta Adresiniz:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required >
             <button onclick="getResults()">Sonuçları Göster</button>
         </form>
     </section>
-
+    <svg width="10" height="10"></svg>
+    <section class="spiderkutu">
+    <main></main>
+    <!-- partial -->
+      <script src='https://unpkg.com/d3@5.16.0/dist/d3.min.js'></script>
+    </section>
+    <svg width="10" height="10"></svg>
     <div id="results"></div>
 
 
@@ -99,74 +103,80 @@
         <div class="feature">
             <h3>Getiri beklentiniz doğrultusunda hangi risk seviyesini kabul edebilirsiniz?</h3><br>
             <p> </p>
-
+                                            <!-- <Hedef,Düşüş,Bütçe,Çeşitlilik,Risk,Yükseliş>-->
             <div class="options">
                 <label>
-                    <input type="radio" name="secenek1" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek1" value="1.2,1.2,1,1,1.3,1.2">
                     Çok Yüksek Riskli
                 </label>
                 <label>
-                    <input type="radio" name="secenek1" value="0.85,1,1,1,1,1">
+                    <input type="radio" name="secenek1" value="1.1,1.1,1,1,1.15,1.1">
                     Yüksek Riskli
                 </label>
                 <label>
-                    <input type="radio" name="secenek1" value="0.6,1,1,1,1,1">
+                    <input type="radio" name="secenek1" value="1.0,1.0,1,1,1,1">
                     Orta Riskli
                 </label>
                 <label>
-                    <input type="radio" name="secenek1" value="0.5,1,1,1,1,1">
+                    <input type="radio" name="secenek1" value="0.9,0.9,1,1,0.85,0.9">
                     Az Riskli
                 </label>
                 <label>
-                    <input type="radio" name="secenek1" value="0.4,1,1,1,1,1">
+                    <input type="radio" name="secenek1" value="0.8,0.8,1,1,0.7,0.8">
                     Daha Az Riskli
                 </label>
             </div>
         </div>
+                                                    <!-- <Hedef,Düşüş,Bütçe,Çeşitlilik,Risk,Yükseliş>-->
+
         <div class="feature">
             <h3>Stratejinizi hangi vadeye göre planlıyorsunuz? </h3><br>
             <p></p>
             <div class="options">
                 <label>
-                    <input type="radio" name="secenek2" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek2" value="0.9,1.1,1,0.9,1.1,1">
                     Kısa Vade
                 </label>
                 <label>
-                    <input type="radio" name="secenek2" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek2" value="1.0,1,1,1,1,1.1">
                     Orta Vade
                 </label>
                 <label>
-                    <input type="radio" name="secenek2" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek2" value="1.1,0.9,1,1.1,0.9,1.2">
                     Uzun Vade
                 </label>
             </div>
         </div>
+                                                            <!-- <Hedef,Düşüş,Bütçe,Çeşitlilik,Risk,Yükseliş>-->
+
         <div class="feature">
             <h3>Bitcoin hakkında hangi ifade size daha yakın?</h3><br>
             <p></p>
             <div class="options">
                 <label>
-                    <input type="radio" name="secenek3" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek3" value="1.1,1,1,1.1,1,1.1">
                     Bitcoin, yatırım yapılması gereken bir varlık sınıfıdır.
                 </label>
                 <label>
-                    <input type="radio" name="secenek3" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek3" value="1,0.9,1,0.9,0.9,1">
                     Bitcoin'in değeri oynak olduğu için riskli bir yatırım aracıdır.
                 </label>
                 <label>
-                    <input type="radio" name="secenek3" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek3" value="1,1,1,0.7,0.9,1">
                     Diğer kripto para birimleri, Bitcoin'den daha iyi fırsatlar sunuyor.
                 </label>
 
             </div>
-        </div>
+        </div>                             
+                                                <!-- <Hedef,Düşüş,Bütçe,Çeşitlilik,Risk,Yükseliş>-->
+
         <div class="feature">
             <h3>Kripto paraların ekonomik trendleri konusundaki bilgi düzeyiniz ve bu trendlere karşı hissiyatınızı
                 hangi seçenek en doğru şekilde ifade eder?</h3><br>
             <p></p>
             <div class="options">
                 <label>
-                    <input type="radio" name="secenek4" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek4" value="1.1,1.1,1,1.1,1,1.2">
                     Oldukça çok bilgi sahibiyim ve iyimser hissediyorum.
                 </label>
                 <label>
@@ -174,11 +184,11 @@
                     Bir miktar bilgi sahibiyim ve genel olarak iyimser hissediyorum.
                 </label>
                 <label>
-                    <input type="radio" name="secenek4" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek4" value="1,1,1,1,0.9,0.9">
                     Sınırlı bilgiye sahibim ve kararsız hissediyorum.
                 </label>
                 <label>
-                    <input type="radio" name="secenek4" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek4" value="0.9,0.8,1,0.9,0.8,0.8">
                     Az bilgiye sahibim ve kötümser hissediyorum.
                 </label>
 
@@ -186,13 +196,15 @@
 
             </div>
         </div>
+                                         <!-- <Hedef,Düşüş,Bütçe,Çeşitlilik,Risk,Yükseliş>-->
+
         <div class="feature">
             <h3>Kripto paraların token ekonomisi ve topluluk tarafından gördüğü ilgi arasında, sizin için daha
                 ağır basan hangisidir?</h3><br>
             <p></p>
             <div class="options">
                 <label>
-                    <input type="radio" name="secenek5" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek5" value="1,0.95,1,1,1,0.9">
                     Coinin Enflasyonunun Yüksek olması benim için negatif bir durum.
                 </label>
                 <label>
@@ -201,7 +213,7 @@
                     konuda nötrüm.
                 </label>
                 <label>
-                    <input type="radio" name="secenek5" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek5" value="1.1,1,1,1,1,1.1">
                     Enflasyon ile ilgilenmiyorum. Proje üzerindeki hype benim için daha önemli.
                 </label>
             </div>
@@ -212,7 +224,7 @@
             <p></p>
             <div class="options">
                 <label>
-                    <input type="radio" name="secenek6" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek6" value="1.1,1,1,1,1,1.1">
                     Evet
                 </label>
                 <label>
@@ -220,7 +232,7 @@
                     Belki
                 </label>
                 <label>
-                    <input type="radio" name="secenek6" value="1,1,1,1,1,1">
+                    <input type="radio" name="secenek6" value="0.9,0.9,1,1,0.9,0.9">
                     Hayır
                 </label>
 
@@ -294,9 +306,45 @@
 
 
 
-    <iframe src="spider/spiderchart.html" width="800" height="800" style="border:none;"></iframe>
-
+    <style> .spiderkutu {
+        margin: 0;
+        height: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }</style>
+    
+   
     <script>
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         window.onload = function () {
             var hepsiCheckbox = document.getElementById("hepsi");
             var digerCheckbox = document.getElementById("diger");
@@ -476,6 +524,11 @@
 
 
         function getResults() {
+
+            // önceki spiderboxu sil
+            d3.select("main svg").remove();
+            d3.select("main h1").remove();
+
             // Başlangıç değerleri olarak 6 tane 1 değeri atıyoruz
             var products = [1, 1, 1, 1, 1, 1];
 
@@ -499,7 +552,283 @@
             // Sonuçları sayfada yazdıralım
             var resultsDiv = document.getElementById("results");
             resultsDiv.innerHTML = "Cevaplar: " + products.join(", ");
+        
+        
+        
+
+
+const data = [
+        {
+            name: "Ortalama Kullanıcı",
+            color: "hsl(325, 40%, 60%)",
+            stats: {
+                hp: 60,
+                attack: 50,
+                defense: 55,
+                specialAttack: 55,
+                specialDefense: 50,
+                speed: 50
+            }
+        },
+	{
+		name: "Kullanıcı1",
+		color: "hsl(200, 30%, 20%)",
+		stats: {
+			hp: products[0]/1.7*100,
+			attack: products[1]/1.7*100,
+			defense: products[2]/1.7*100,
+			specialAttack: products[3]/1.7*100,
+			specialDefense: products[4]/1.7*100,
+			speed: products[5]/1.7*100,
+		}
+	}
+];
+
+// aliases to describe the stats
+const alias = {
+	hp: "Hedef",
+	attack: "Düşüş",
+	defense: "Bütçe",
+	specialAttack: "Çeşitlilik",
+	specialDefense: "Risk",
+	speed: "Yükseliş"
+};
+
+// unique properties
+const statsKeys = data
+	.map(({ stats }) => Object.keys(stats))
+	.reduce((acc, curr) => {
+		const keys = curr.filter((key) => !acc.includes(key));
+		return [...acc, ...keys];
+	}, []);
+
+const statsValues = data
+	.map(({ stats }) => Object.values(stats))
+	.reduce((acc, curr) => [...acc, ...curr], []);
+
+const maxStat = 100;
+
+const main = d3.select("main");
+main.append("h1").text("Yatıcımcı Profili");
+
+const size = 600;
+const margin = 40;
+const radius = (size - margin) / 2;
+
+const scaleAngle = d3
+	.scalePoint()
+	.domain([...statsKeys, ""])
+	.range([0, Math.PI * 2]);
+
+const scaleRadius = d3
+	.scaleLinear()
+	.domain([0, maxStat * 1.08])
+	.range([0, radius])
+	.nice();
+
+const lineRadial = d3
+	.lineRadial()
+	.angle((d) => scaleAngle(d.stat))
+	.radius((d) => scaleRadius(d.value))
+	.curve(d3.curveLinearClosed);
+
+main
+	.append("svg")
+	.attr("id", "spider-chart")
+	.attr("viewBox", `-${size / 2} -${size / 2} ${size} ${size}`)
+	.attr("width", size)
+	.attr("height", size);
+
+d3.select("#spider-chart").append("g").attr("class", "legend");
+
+d3
+	.select(".legend")
+	.selectAll("g.label")
+	.data(data.map(({ name, color }) => ({ name, color })))
+	.enter()
+	.append("g")
+	.attr("class", "label")
+	.attr("transform", (d, i) => `translate(${-radius} ${-radius + 25 * i})`);
+
+d3
+	.selectAll(".label")
+	.append("text")
+	.attr("x", 12)
+	.attr("y", 6)
+	.text((d) => d.name)
+	.style("text-transform", "capitalize");
+
+d3
+	.selectAll(".label")
+	.append("circle")
+	.attr("r", 6)
+	.attr("fill", (d) => d.color);
+
+d3
+	.select(".legend")
+	.selectAll("g.axis")
+	.data(statsKeys)
+	.enter()
+	.append("g")
+	.attr("class", "axis")
+	.style("opacity", 0.4);
+
+d3
+	.selectAll(".axis")
+	.append("text")
+	.text((d) => alias[d])
+	.attr("fill", "currentColor")
+	.attr("stroke", "none")
+	.attr("font-size", 18)
+	.style("text-transform", "uppercase")
+	.attr("text-anchor", "middle")
+	.attr("dominant-baseline", "middle")
+	.attr(
+		"transform",
+		(d) =>
+			`rotate(${
+				(scaleAngle(d) * 180) / Math.PI
+			}) translate(0 -${radius}) rotate(-${(scaleAngle(d) * 180) / Math.PI})`
+	);
+
+const ticks = 6;
+const dataTicks = Array(ticks)
+	.fill()
+	.map((value, index, { length }) =>
+		Math.round((maxStat / length) * (index + 1))
+	);
+
+d3
+	.selectAll(".axis")
+	.append("path")
+	.attr("fill", "none")
+	.attr("stroke", "currentColor")
+	.attr("stroke-width", 1)
+	.attr(
+		"d",
+		`M 0 -${scaleRadius(dataTicks[0])} V -${scaleRadius(
+			dataTicks[dataTicks.length - 1]
+		)}`
+	)
+	.attr("transform", (d) => `rotate(${(scaleAngle(d) * 180) / Math.PI})`);
+
+d3.select(".legend").append("g").attr("class", "ticks").style("opacity", 0.3);
+
+d3
+	.select(".ticks")
+	.selectAll("g.tick")
+	.data(dataTicks)
+	.enter()
+	.append("g")
+	.attr("class", "tick");
+
+d3
+	.selectAll(".tick")
+	.append("text")
+	.text((d) => d)
+	.attr("x", "5")
+	.attr("y", (d) => scaleRadius(d) * -1)
+	.attr("font-size", 15);
+
+d3
+	.selectAll(".tick")
+	.append("path")
+	.attr("d", (d) => lineRadial(statsKeys.map((stat) => ({ stat, value: d }))))
+	.attr("fill", "none")
+	.attr("stroke", "currentColor")
+	.attr("stroke-width", 1);
+
+lineRadial.curve(d3.curveCatmullRomClosed);
+data.forEach(({ color, stats }) => {
+	const dataStats = Object.entries(stats).map(([stat, value]) => ({
+		stat,
+		value
+	}));
+
+	d3
+		.select("#spider-chart")
+		.append("path")
+		.attr("d", lineRadial(dataStats))
+		.attr("fill", "none")
+		.attr("stroke", color)
+		.attr("stroke-width", 5);
+
+	d3
+		.select("#spider-chart")
+		.append("path")
+		.attr("d", lineRadial(dataStats))
+		.attr("fill", color)
+		.attr("opacity", 0.25)
+		.attr("stroke", "none");
+});
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
         }
+
+
+
+
+
+
+function getKarakter1Degeri() {
+    var karakter1 = 100; // Başlangıç değeri
+
+    return karakter1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 
     <script>
@@ -517,7 +846,7 @@
         });
 
 
-    </script>
+    </>
     <script src="script.js"></script>
     <script src="coinismi.js"></script>
     <script src="sayfa2.js"></script>
